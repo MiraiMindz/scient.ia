@@ -1,0 +1,28 @@
+# Backend
+
+This is the documentation of the backend code.
+
+- [Routes](./routes.md)
+- [Roles](./roles_and_permissions.md)
+- [Code](./code/index.md)
+  - [Modules](./code/index.md)
+      - [Roles](./code/modules/roles/index.md)
+        - [Functions](./code/modules/roles/functions.md)
+        - [Types](./code/modules/roles/types.md)
+        - [Variables](./code/modules/roles/variables.md)
+      - [Database](./code/modules/database/index.md)
+        - [Functions](./code/modules/database/functions.md)
+        - [Types](./code/modules/database/types.md)
+        - [Variables](/code/modules./database/variables.md)
+      - [Models](./code/modules/models/index.md)
+        - [Functions](./code/modules/models/functions.md)
+        - [Types](./code/modules/models/types.md)
+        - [Variables](./code/modules/models/variables.md)
+      - [Routes](./code/modules/routes/index.md)
+        - [Functions](./code/modules/routes/functions.md)
+        - [Types](./code/modules/routes/types.md)
+        - [Variables](./code/modules/routes/variables.md)
+      - [Utils](./code/modules/utils/index.md)
+        - [Functions](./code/modules/utils/functions.md)
+        - [Types](./code/modules/utils/types.md)
+        - [Variables](./code/modules/utils/variables.md)

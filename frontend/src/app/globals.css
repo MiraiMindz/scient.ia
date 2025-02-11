@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+@layer utilities {
+  .bg-brand-bare-0 {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1280 720' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='640' cy='360' r='65' fill='%23FEFEFE'/%3E%3Ccircle cx='640' cy='360' r='49.5' fill='%23FEFEFE' stroke='%23E5E0E0' stroke-dasharray='2 2'/%3E%3Cpath d='M0 360H1280' stroke='%23E5E0E0' stroke-dasharray='2 2'/%3E%3Cpath d='M640 720V0' stroke='%23E5E0E0' stroke-dasharray='2 2'/%3E%3C/svg%3E%0A");;
+  }
+}
