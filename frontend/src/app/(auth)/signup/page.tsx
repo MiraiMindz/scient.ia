@@ -20,7 +20,7 @@ import { useForm } from "react-hook-form";
 import Link from "next/link";
 import { useUserStore } from '@/app/zustandStores/userStore';
 import { useRouter } from 'next/navigation';
-
+import Cookies from 'js-cookie';
 
 
 function Logo(props: { className?: string }) {
@@ -102,6 +102,7 @@ export default function Home() {
             console.log(result);
             console.log(result.token);
             setToken(result.token);
+            Cookies.set('token', result.token, { expires: 1 }); // Expires in 1 day
             router.push("/app");
         } catch (error) {
             console.error("Error:", error);
@@ -122,6 +123,7 @@ export default function Home() {
             console.log(result);
             console.log(result.token);
             setToken(result.token);
+            Cookies.set('token', result.token, { expires: 1 }); // Expires in 1 day
             router.push("/app");
         } catch (error) {
             console.error("Error:", error);

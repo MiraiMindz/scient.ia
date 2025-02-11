@@ -20,6 +20,7 @@ import { useForm } from "react-hook-form";
 import Link from "next/link";
 import { useUserStore } from '@/app/zustandStores/userStore';
 import { useRouter } from 'next/navigation';
+import Cookies from 'js-cookie';
 
 
 function Banner(props: { className?: string }) {
@@ -185,6 +186,7 @@ export default function Home() {
             const result: { token: string } = await response.json();
             console.log(result);
             console.log(result.token);
+            Cookies.set('token', result.token, { expires: 1 }); // Expires in 1 day
             setToken(result.token);
             router.push("/app");
         } catch (error) {
